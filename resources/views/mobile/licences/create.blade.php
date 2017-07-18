@@ -87,7 +87,10 @@
                                 <div class="form-group">
                                     <label for="company" class="col-sm-2 control-label">牌照所属公司</label>
                                     <div class="col-sm-8">
-                                        <input style="width: 120px; text-align: right;" type="text" id="company" name="company" value="" class="form-control company" placeholder="输入 牌照公司">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+                                            <input type="text" id="company" name="company" value="" class="form-control company" placeholder="输入 牌照公司">
+                                        </div>
                                     </div>
                                 </div>
 
