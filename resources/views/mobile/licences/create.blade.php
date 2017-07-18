@@ -105,7 +105,7 @@
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
-                                            <input type="text" id="name" name="name" value="" class="form-control name" placeholder="输入 用户昵称" required>
+                                            <input type="text" id="name" name="name" value="" class="form-control name" placeholder="输入 姓名" required>
                                         </div>
                                     </div>
                                 </div>
@@ -114,7 +114,7 @@
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                            <input type="email" id="email" name="email" value="" class="form-control email" placeholder="输入 用户邮箱" required>
+                                            <input type="email" id="email" name="email" value="" class="form-control email" placeholder="输入 邮箱" required>
                                         </div>
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-                                            <input style="width: 150px" type="text" id="phone" name="phone" value="" class="form-control phone" placeholder="输入 用户手机" required>
+                                            <input style="width: 150px" type="text" id="phone" name="phone" value="" class="form-control phone" placeholder="输入 手机号码" required>
                                         </div>
                                     </div>
                                 </div>
@@ -132,7 +132,7 @@
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
-                                            <input type="text" id="qq" name="qq" value="" class="form-control qq" placeholder="输入 用户QQ" required>
+                                            <input type="text" id="qq" name="qq" value="" class="form-control qq" placeholder="输入 QQ" required>
                                         </div>
                                     </div>
                                 </div>
@@ -141,14 +141,14 @@
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
-                                            <input type="text" id="wechat" name="wechat" value="" class="form-control wechat" placeholder="输入 用户QQ" required>
+                                            <input type="text" id="wechat" name="wechat" value="" class="form-control wechat" placeholder="输入 微信" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="message" class="col-sm-2 control-label">留言</label>
                                     <div class="col-sm-8">
-                                        <textarea name="message" class="form-control" rows="5" placeholder="输入 用户留言"></textarea>
+                                        <textarea name="message" class="form-control" rows="5" placeholder="输入 留言"></textarea>
                                     </div>
                                 </div>
                             </div>
