@@ -13,6 +13,7 @@ class UserMessage extends Model
         'phone',
         'email',
         'qq',
+        'wechat',
         'licence_id',
         'licence_category',
         'region',

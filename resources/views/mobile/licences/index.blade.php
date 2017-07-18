@@ -30,13 +30,15 @@
             <span class="opt"><i class="iconFont"></i></span>  
             <div class="hd"><h4><a href="/licences/{{$licence->id}}">{{ $categories[$licence->category] }}</a></h4></div>    
             <div class="bd">        
-                <span class="mj"><b>{{ $licence->price }}<i>万元</i></b><b>牌照价格</b></span>
-                <span class="ya"><b>62.67<i>%</i></b><b>价差率</b></span>        
-                <span class="zf"><b style="font-size:14px">一年期竞价</b><b>增发类型</b></span>    
+                <span class="mj"><b>{{ round($licence->price) }}<i>万元</i></b><b>转让价格</b></span>
+                {{--<span class="ya"><b>62.67<i>%</i></b><b>价差率</b></span>--}}
+                <span class="ya"></span>    
+                <span class="zf"><b style="font-size:14px">牌照类型</b><b>{{ $categories[$licence->category] }}</b></span>    
             </div>    
             <div class="ft"> 
                 <span class="price">所属地区：{{ $regions[$licence->region] }}</span>        
-                <span class="user">项目进度 证监会批准</span>        
+                {{--<span class="user">项目进度 证监会批准</span>--}}
+                <span class="user"></span>        
                 <span class="focus">关注<b class="num">{{ $licence->collection }}</b>人</span>    
             </div>
         </li>

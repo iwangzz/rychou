@@ -18,7 +18,7 @@ class LicenceController extends Controller
     {
         return view('mobile.licences.index')
             ->with([
-                'licences' => Licence::all(),
+                'licences' => Licence::where('status', 1)->get(),
                 'categories' => Category::lists('name', 'id'),
                 'regions' => Region::lists('name', 'id')
             ]);

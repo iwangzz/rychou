@@ -85,6 +85,13 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label for="company" class="col-sm-2 control-label">牌照所属公司</label>
+                                    <div class="col-sm-8">
+                                        <input style="width: 120px; text-align: right;" type="text" id="company" name="company" value="" class="form-control company" placeholder="输入 牌照公司">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
                                     <label for="price" class="col-sm-2 control-label">牌照价格</label>
                                     <div class="col-sm-8">
                                         <div class="input-group">
@@ -94,7 +101,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="name" class="col-sm-2 control-label">用户昵称</label>
+                                    <label for="name" class="col-sm-2 control-label">姓名</label>
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
@@ -103,7 +110,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="email" class="col-sm-2 control-label">用户邮箱</label>
+                                    <label for="email" class="col-sm-2 control-label">邮箱</label>
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
@@ -112,7 +119,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="phone" class="col-sm-2 control-label">用户手机</label>
+                                    <label for="phone" class="col-sm-2 control-label">手机</label>
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-phone"></i></span>
@@ -121,7 +128,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="qq" class="col-sm-2 control-label">用户QQ</label>
+                                    <label for="qq" class="col-sm-2 control-label">QQ</label>
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
@@ -130,7 +137,16 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="message" class="col-sm-2 control-label">用户留言</label>
+                                    <label for="wechat" class="col-sm-2 control-label">微信</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+                                            <input type="text" id="wechat" name="wechat" value="" class="form-control wechat" placeholder="输入 用户QQ" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="col-sm-2 control-label">留言</label>
                                     <div class="col-sm-8">
                                         <textarea name="message" class="form-control" rows="5" placeholder="输入 用户留言"></textarea>
                                     </div>

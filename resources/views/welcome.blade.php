@@ -80,11 +80,11 @@
         <h2><s>•</s>企业信息<s>•</s></h2>
     </div>
     <div class="con">
-        <h3 style="margin-bottom:10px;"><i class="iconFont"></i>联系QQ: 7775158</h3>
+        <h3 style="margin-bottom:10px;"><i class="iconFont"></i>联系QQ: <a href="mqqwpa://im/chat?chat_type=wpa&uin=7775158&version=1&src_type=web&web_src=bjhuli.com">报名咨询</a></h3>
         <h3><i class="iconFont"></i>联系电话: 188-888-8888</h3>
     </div>
 </section>
-
+{{--
 <section class="dzzs">
     <h3 class="h3"><i class="iconFont"></i>最近成交指数</h3>
     <div>
@@ -96,6 +96,7 @@
         <span>进行中</span>
     </div>
 </section>
+--}}
 
 <a href="/" class="onlineItem fixb"><span>459</span><b>个</b><br>在线可交易牌照</a>
 
