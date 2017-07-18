@@ -43,7 +43,7 @@ class UserMessageController extends Controller
     {
         UserMessage::create($request->all());
 
-        return redirect()->back();
+        return redirect("/");
     }
 
     /**

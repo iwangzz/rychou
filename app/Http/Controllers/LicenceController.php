@@ -52,7 +52,7 @@ class LicenceController extends Controller
 
         Licence::create($request->all());
 
-        return redirect()->back();
+        return redirect("/");
     }
 
     /**
