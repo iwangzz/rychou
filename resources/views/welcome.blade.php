@@ -80,7 +80,7 @@
         <h2><s>•</s>企业信息<s>•</s></h2>
     </div>
     <div class="con">
-        <h3 style="margin-bottom:10px;"><i class="iconFont"></i>联系QQ: 88888888</h3>
+        <h3 style="margin-bottom:10px;"><i class="iconFont"></i>联系QQ: 7775158</h3>
         <h3><i class="iconFont"></i>联系电话: 188-888-8888</h3>
     </div>
 </section>
