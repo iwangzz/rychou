@@ -128,17 +128,17 @@
               showCancelButton: true,
               confirmButtonColor: "#DD6B55",
               confirmButtonText: "买牌照",
-              cancelButtonText: "取消",
-              closeOnConfirm: true,
-              closeOnCancel: true
+              cancelButtonText: "卖牌照",
+              timer: 2000, 
+              closeOnConfirm: false,
+              closeOnCancel: false
             },
             function(isConfirm){
               if (isConfirm) {
                 window.location.href="/user-messages"
+              } else {
+                window.location.href="/licences/create"
               }
-              // else {
-              //   window.location.href="/licences/create"
-              // }
             });
         })
     })
