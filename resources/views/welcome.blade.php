@@ -32,10 +32,10 @@
             
         </div>
         
-        <div class="swiper-slide swiper-slide-next" style="width: 412px;">
+        <div class="swiper-slide" style="width: 412px;">
             
             <a href="/">
-            <img data-src="http://res.roadshowcenter.com/image/20170405/1_c2831d86d8f38a2a585afbef753f6491.png" class="swiper-lazy">
+            <img data-src="http://res.roadshowcenter.com/image/20170615/1_e00ff3781bcc44e69ad0470334cbcde4.png" class="swiper-lazy">
             </a>
             <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         </div>
@@ -43,7 +43,7 @@
         <div class="swiper-slide" style="width: 412px;">
             
             <a href="/">
-            <img data-src="http://res.roadshowcenter.com/image/20170330/1_cf16a5a586985a03a5899f95ff1a2baa.jpg" class="swiper-lazy">
+            <img data-src="http://res.roadshowcenter.com/image/20170322/19_5355e628b78e23ca5155e7d56d660783.png" class="swiper-lazy">
             </a>
             <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         </div>
