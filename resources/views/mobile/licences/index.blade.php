@@ -21,13 +21,13 @@
 
 <section class="tabList fixF">
     <a class="act">默认</a>
-    <a onclick="clickFilter()" style="float:right;">筛选<i class="iconFont"></i></a>
+    {{--<a onclick="clickFilter()" style="float:right;">筛选<i class="iconFont"></i></a>--}}
 </section>
 
 <ol class="listN fixM">
     @foreach($licences as $licence)
         <li data-id={{ $licence->id }}>
-            <a href="/"><span class="opt"><i class="iconFont"></i></span></a>    
+            <span class="opt"><i class="iconFont"></i></span>  
             <div class="hd"><h4><a href="/licences/{{$licence->id}}">{{ $categories[$licence->category] }}</a></h4></div>    
             <div class="bd">        
                 <span class="mj"><b>{{ $licence->price }}<i>万元</i></b><b>牌照价格</b></span>
