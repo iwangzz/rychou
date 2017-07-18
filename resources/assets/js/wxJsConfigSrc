@@ -1,0 +1,8 @@
+wx.config({
+debug: false, 
+appId: 'wx601e414cc9f42f83',
+timestamp: 1499821753, 
+nonceStr: '-1-1-152-1-158-1-1-1-1-1-1-1-1-1', 
+signature: '16f4ee6fb0137c082f06ca3911d00c64f73034d8',
+jsApiList: ['checkJsApi','onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'hideMenuItems','showMenuItems','hideAllNonBaseMenuItem','showAllNonBaseMenuItem', 'translateVoice', 'startRecord', 'stopRecord', 'onRecordEnd', 'playVoice', 'pauseVoice', 'stopVoice', 'uploadVoice', 'downloadVoice', 'chooseImage', 'previewImage', 'uploadImage', 'downloadImage', 'getNetworkType', 'openLocation', 'getLocation', 'hideOptionMenu', 'showOptionMenu', 'closeWindow',  'scanQRCode', 'chooseWXPay', 'openProductSpecificView', 'addCard', 'chooseCard', 'openCard']
+})
