@@ -5,17 +5,17 @@ return [
     /*
      * Laravel-admin name.
      */
-    'name'      => 'Jijin-admin',
+    'name'      => 'Rychou-admin',
 
     /*
      * Logo in admin panel header.
      */
-    'logo'      => '<b>Jijin</b> admin',
+    'logo'      => '<b>Rychou</b> admin',
 
     /*
      * Mini-logo in admin panel header.
      */
-    'logo-mini' => '<b>Ji</b>',
+    'logo-mini' => '<b>Rychou</b>',
 
     /*
      * Laravel-admin url prefix.
@@ -53,7 +53,7 @@ return [
             'file'   => 'file',
         ],
 
-        'host' => 'http://jijin.com/upload/',
+        'host' => 'http://pp.rychou.com/upload/',
     ],
 
     /*

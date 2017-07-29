@@ -18,7 +18,7 @@
 
 <body>
 <header class="topBar">
-    <a href="http://jijin.com" class="f_l"><i class="iconFont"></i></a><a href="http://jijin.com" class="f_r"><!-- <i class="iconFont">&#xe615;</i> --></a>在线牌照列表
+    <a href="/" class="f_l"><i class="iconFont"></i></a><a href="/" class="f_r"><!-- <i class="iconFont">&#xe615;</i> --></a>在线牌照列表
 </header>
 
 <section class="tabList fixF" style="margin-top:0.2rem;">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0043)http://jijin.com/admin/user-messages/create -->
+<!-- saved from url=(0043)//admin/user-messages/create -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,8 +48,8 @@
 
 <body class="skin-blue-light sidebar-mini sidebar-collapse">
 <header class="topBar">
-    <a href="http://jijin.com" class="f_l"><i class="iconFont"></i></a>
-    <a href="http://jijin.com" class="f_r"><!-- <i class="iconFont">&#xe615;</i> --></a>发布牌照
+    <a href="/" class="f_l"><i class="iconFont"></i></a>
+    <a href="/" class="f_r"><!-- <i class="iconFont">&#xe615;</i> --></a>发布牌照
 </header>
 <div class="wrapper" style="top:5px;">
     <div class="content-wrapper" style="min-height: 578px;">
