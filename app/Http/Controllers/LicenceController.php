@@ -14,11 +14,35 @@ class LicenceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        $queryBuilder = Licence::select('*');
+        if ($request->has('c') && $request->input('c')) {
+          $queryBuilder->where('category', $request->input('c'));  
+        }
+        if ($request->has('p') && $request->input('p')) {
+            switch ($request->input('p')) {
+                case 1:
+                    $queryBuilder->whereBetween('price', [10, 20]);  
+                    break;
+                case 2:
+                    $queryBuilder->whereBetween('price', [20, 50]);  
+                    break;
+                case 3:
+                    $queryBuilder->whereBetween('price', [50, 100]);  
+                    break;
+                case 4:
+                    $queryBuilder->whereBetween('price', [100, 200]);  
+                    break;
+                case 5:
+                    $queryBuilder->where('price', '>', 200);  
+                    break;
+            }
+        }
+
         return view('mobile.licences.index')
             ->with([
-                'licences' => Licence::where('status', 1)->get(),
+                'licences' => $queryBuilder->get(),
                 'categories' => Category::lists('name', 'id'),
                 'regions' => Region::lists('name', 'id')
             ]);
@@ -34,7 +58,7 @@ class LicenceController extends Controller
         return view('mobile.licences.create')
             ->with([
                 'categories' => Category::lists('name', 'id'),
-                'regions' => Region::lists('name', 'id')
+                'regions' => Region::lists('name', 'id'),
             ]);
     }
 
