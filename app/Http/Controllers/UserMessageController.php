@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Controllers\Controller;
-use App\Models\UserMessage, App\Models\Category, App\Models\Region;
+use App\Models\UserMessage, App\Models\Category, App\Models\Region, App\Models\Licence;
 
 class UserMessageController extends Controller 
 {
@@ -14,12 +14,13 @@ class UserMessageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         return view('mobile.users.message')
             ->with([
                 'categories' => Category::lists('name', 'id'),
-                'regions' => Region::lists('name', 'id')
+                'regions' => Region::lists('name', 'id'),
+                'licence' => $request->has('id') ? Licence::findOrFail($request->input('id')) : ''
             ]);
     }
 

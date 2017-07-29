@@ -48,19 +48,23 @@
 
 <body class="skin-blue-light sidebar-mini sidebar-collapse">
 <header class="topBar">
-    <a href="http://jijin.com" class="f_l"><i class="iconFont"></i></a>
-    <a href="http://jijin.com" class="f_r"><!-- <i class="iconFont">&#xe615;</i> --></a>用户留言
+    <a href="{{ $licence ? '/licences' : 'http://jijin.com' }}" class="f_l"><i class="iconFont"></i></a>
+    <a href="{{ $licence ? '/licences' : 'http://jijin.com' }}" class="f_r"><!-- <i class="iconFont">&#xe615;</i> --></a>{{ $licence ? '提交关注' : '用户留言' }}
 </header>
 <div class="wrapper" style="top:5px;">
     <div class="content-wrapper" style="min-height: 578px;">
-        <section class="content-header"><h1>用户留言</h1></section>
+        <section class="content-header"><h1>{{ $licence ? '提交关注' : '用户留言' }}</h1></section>
         <section class="content">
             <div class="row">
                 <div class="col-md-12">
                 <div class="box box-info">
                     <form action="/user-messages" method="post" accept-charset="UTF-8" class="form-horizontal" pjax-container="">
                         {!! csrf_field() !!}
+                        @if($licence)
+                            <input type="hidden" name="licence_id" value={{$licence->id}} />
+                        @endif
                         <div class="box-body">
+                            @if(!$licence)
                             <div class="fields-group">
                                 <div class="form-group">
                                     <label for="category" class="col-sm-2 control-label">牌照分类</label>
@@ -93,6 +97,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                @endif
                                 <div class="form-group">
                                     <label for="name" class="col-sm-2 control-label">姓名</label>
                                     <div class="col-sm-8">
@@ -144,16 +149,9 @@
                                         <textarea name="message" class="form-control" rows="5" placeholder="输入 留言"></textarea>
                                     </div>
                                 </div>
+                                <div class="col-sm-8">
+                                <button type="submit" class="btn btn-info" style="display:block; margin:0 auto;">{{ $licence ? '关注' : '提交' }}</button>
                             </div>
-                        </div>
-                            <!-- /.box-body -->
-                        <div class="box-footer">
-                            <div class="col-sm-2">
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="btn-group">
-                                    <button type="submit" class="btn btn-info">提交</button>
-                                </div>
                             </div>
                         </div>
                     </form>

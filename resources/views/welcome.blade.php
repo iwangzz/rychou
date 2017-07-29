@@ -72,7 +72,7 @@
 <nav>
     <a href="/licences"><i></i><span>牌照并购</span></a>
     <a href="/licences/create"><i></i><span>发布牌照</span></a>
-    <a href="/"><i></i><span>企业服务</span></a>
+    <a href="/licences"><i></i><span>企业服务</span></a>
 </nav>
 
 <section class="productGood2">
@@ -80,12 +80,7 @@
         <h2><s>•</s>企业信息<s>•</s></h2>
     </div>
     <div class="con">
-        <h3 style="margin-bottom:10px;">
-	    <i class="iconFont"></i>
-		联系QQ: 
-		<a target="_blank" href="mqqwpa://im/chat?chat_type=wpa&uin=7775158&version=1&src_type=web&web_src=oicqzone.com" style="color:#0b182f;">7775158
-</a>		
-        </h3>
+        <h3 style="margin-bottom:10px;"><i class="iconFont"></i>联系QQ: <a href="mqqwpa://im/chat?chat_type=wpa&uin=7775158&version=1&src_type=web&web_src=bjhuli.com" style="color:#000;">7775158</a></h3>
         <h3><i class="iconFont"></i>联系电话: 188-888-8888</h3>
     </div>
 </section>
@@ -103,7 +98,7 @@
 </section>
 --}}
 
-<a href="/" class="onlineItem fixb"><span>459</span><b>个</b><br>在线可交易牌照</a>
+<a href="/" class="onlineItem fixb"><span>459个</span><b>个</b><br>在线可交易牌照</a>
 
 <footer class="bottomBar">
     <ul><!-- 当前状态是span标签的，可点击的是a标签的 -->
@@ -111,7 +106,7 @@
         <li><a href="/" class="act"><i class="iconFont"></i>首页</a></li>
         <li><a href="/licences" class=""><i class="iconFont"></i>牌照</a></li>
         <li class="funcUnsupported"><span><i class="iconFont"></i></span></li>
-        <li><a href="/" class=""><i class="iconFont"></i>资讯</a></li>
+        <li><a href="/licences" class=""><i class="iconFont"></i>资讯</a></li>
         <li><a href="/user-messages" class=""><i class="iconFont"></i>留言</a></li>
     </ul>
 </footer>
@@ -129,12 +124,11 @@
             swal({
               title: "",
               text: "亲，请选择您的牌照需求",
-              type: 'success',
+              type: 'error',
               showCancelButton: true,
               confirmButtonColor: "#DD6B55",
               confirmButtonText: "买牌照",
               cancelButtonText: "卖牌照",
-              timer: 2000, 
               closeOnConfirm: false,
               closeOnCancel: false
             },
@@ -145,6 +139,13 @@
                 window.location.href="/licences/create"
               }
             });
+        })
+        $('body').bind('DOMNodeInserted', function(e){
+           if ($(e.target).attr('class') == 'sweet-alert') {
+                $('.sa-icon').on('tap',function(){
+                    swal.close();
+                })
+           }
         })
     })
 </script>

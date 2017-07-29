@@ -11,6 +11,8 @@
 <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
 <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
 <script src="{{ asset('js/newRem.js') }}"></script>
+<script src="{{ asset('js/jquery-1.8.2.min.js') }}"></script>
+<link rel="stylesheet" href="{{ asset('css/demo.css') }}">
 <link rel="stylesheet" href="{{ elixir('css/licence.css') }}">
 </head>
 
@@ -19,16 +21,57 @@
     <a href="http://jijin.com" class="f_l"><i class="iconFont"></i></a><a href="http://jijin.com" class="f_r"><!-- <i class="iconFont">&#xe615;</i> --></a>在线牌照列表
 </header>
 
-<section class="tabList fixF">
+<section class="tabList fixF" style="margin-top:0.2rem;">
     <a class="act">默认</a>
     {{--<a onclick="clickFilter()" style="float:right;">筛选<i class="iconFont"></i></a>--}}
 </section>
+<div class="screening">
+    <ul>
+        <li class="default current"><span>默认</span></li>
+        <li class="Brand"><span>价格区间</span></li>
+        <li class="Sort"><span>牌照分类</span></li>
+        <li class="meishi"><span>更多</span></li>
+    </ul>
+</div>
+
+<!-- 企业性质-->
+<div class="Sort-eject Sort-height">
+    <ul class="Sort-Sort" id="Sort-Sort">
+        <li onclick="Sorts(this)"><a href="/licences?c=0" style="color:#000;">不限</a></li>
+        @foreach($categories as $id => $name) 
+            <li onclick="Sorts(this)"><a href="/licences?c={{$id}}" style="color:#000;">{{ $name }}</a></li>
+        @endforeach
+    </ul>
+</div>
+
+<!--专业-->
+<div class="Category-eject">
+    <ul class="Category-w" id="Categorytw">
+        <li onclick="Categorytw(this)"><a href="/licences?p=0" style="color:#000;">不限</a></li>
+        <li onclick="Categorytw(this)"><a href="/licences?p=1" style="color:#000;">10-20万</a></li>
+        <li onclick="Categorytw(this)"><a href="/licences?p=2" style="color:#000;">20-50万</a></li>
+        <li onclick="Categorytw(this)"><a href="/licences?p=3" style="color:#000;">50-100万</a></li>
+        <li onclick="Categorytw(this)"><a href="/licences?p=4" style="color:#000;">100-200万</a></li>
+        <li onclick="Categorytw(this)"><a href="/licences?p=5" style="color:#000;">> 200万</a></li>
+    </ul>
+</div>
+<!-- End 专业 -->
+
+<!-- 更多 -->
+<div class="meishi22">
+    <ul class="meishia-w" id="meishia">
+        <li><a href="/user-messages" style="color:#000;">发布买牌照</a></li>
+        <li><a href="/licences/create" style="color:#000;">发布卖牌照</a></li>
+    </ul>
+</div>
 
 <ol class="listN fixM">
     @foreach($licences as $licence)
         <li data-id={{ $licence->id }}>
-            <span class="opt"><i class="iconFont"></i></span>  
-            <div class="hd"><h4><a href="/licences/{{$licence->id}}">{{ $categories[$licence->category] }}</a></h4></div>    
+            <div class="hd">
+                <h4>{{ $categories[$licence->category] }}</h4>
+                <a  href="/user-messages?id={{ $licence->id }}" style="display:inline-block;float:right;color:#38a2ff;"><i class="iconFont"></i></a>
+            </div>    
             <div class="bd">        
                 <span class="mj"><b>{{ round($licence->price) }}<i>万元</i></b><b>转让价格</b></span>
                 {{--<span class="ya"><b>62.67<i>%</i></b><b>价差率</b></span>--}}
@@ -46,6 +89,7 @@
 </ol>
 
 <script src="{{ asset('js/zepto.min.js') }}"></script>
+<script src="{{ asset('js/demo.js') }}"></script>
 <script>
 function clickFilter(){
     var sortType = $("#sortType").val();

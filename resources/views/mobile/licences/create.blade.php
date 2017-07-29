@@ -158,12 +158,8 @@
                         </div>
                             <!-- /.box-body -->
                         <div class="box-footer">
-                            <div class="col-sm-2">
-                            </div>
                             <div class="col-sm-8">
-                                <div class="btn-group">
-                                    <button type="submit" class="btn btn-info">提交</button>
-                                </div>
+                                <button type="submit" class="btn btn-info" style="display:block; margin:0 auto;">提交</button>
                             </div>
                         </div>
                     </form>
