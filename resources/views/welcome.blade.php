@@ -80,7 +80,12 @@
         <h2><s>•</s>企业信息<s>•</s></h2>
     </div>
     <div class="con">
-        <h3 style="margin-bottom:10px;"><i class="iconFont"></i>联系QQ: <a href="mqqwpa://im/chat?chat_type=wpa&uin=7775158&version=1&src_type=web&web_src=bjhuli.com">7775158</a></h3>
+        <h3 style="margin-bottom:10px;">
+	    <i class="iconFont"></i>
+		联系QQ: 
+		<a target="_blank" href="mqqwpa://im/chat?chat_type=wpa&uin=7775158&version=1&src_type=web&web_src=oicqzone.com" style="color:#0b182f;">7775158
+</a>		
+        </h3>
         <h3><i class="iconFont"></i>联系电话: 188-888-8888</h3>
     </div>
 </section>
